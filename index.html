@@ -4,106 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #333;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 400px;
-            background: #bfc8f1;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-        }
-
-        .header {
-            background: linear-gradient(to right, #2575fc, #6a11cb);
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-
-        .form-container {
-            padding: 30px;
-        }
-
-        .form-container input {
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            border: 1px solid #2575fc;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        .form-container input:focus {
-            border: 1px solid #6a11cb;
-        }
-
-        .form-container button {
-            width: 100%;
-            padding: 15px;
-            background: #2575fc;
-            border: none;
-            color: #fff;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .form-container button:hover {
-            background: #6a11cb;
-        }
-
-        .form-container a {
-            display: block;
-            margin-top: 10px;
-            text-align: center;
-            color: #2575fc;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        .form-container a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                margin: 0 20px;
-            }
-
-            .header {
-                font-size: 1.2rem;
-            }
-
-            .form-container input, .form-container button {
-                padding: 12px;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
     <script>
         $(document).ready(function () {
             $('form').on('submit', function (event) {
