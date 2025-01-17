@@ -5,26 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('form').on('submit', function (event) {
-                event.preventDefault();
-
-                const username = $('input[name="username"]').val().trim();
-                const password = $('input[name="password"]').val().trim();
-
-                if (!username || !password) {
-                    toastr.error('Please fill out all fields!', 'Validation Error');
-                } else {
-                    toastr.success('Form submitted successfully!', 'Success');
-                }
-            });
-        });
-    </script>
 </head>
 <body>
     <div class="container">
